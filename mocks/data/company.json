@@ -1,0 +1,34 @@
+{
+    "companies": [
+      {
+        "id": "1",
+        "name": "Apple",
+        "telephone": "88900000",
+        "type": "Electronic Devices"
+      },
+      {
+        "id": "2",
+        "name": "Dorsa",
+        "telephone": "77900000",
+        "type": "Edible Products"
+      },
+      {
+        "id": "3",
+        "name": "Sony",
+        "telephone": "22900000",
+        "type": "Electronics Devices"
+      },
+      {
+        "id": "4",
+        "name": "Mihan",
+        "telephone": "33900000",
+        "type": "Edible Products"
+      },
+      {
+        "id": "5",
+        "name": "Tefal",
+        "telephone": "44900000",
+        "type": "Home Appliances"
+      }
+    ]
+  }

@@ -1,0 +1,53 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "title": "Iphone",
+        "idCompany": "1",
+        "createDate": "2020/9/8",
+        "status": true
+      },
+      {
+        "id": "2",
+        "title": "Cake",
+        "idCompany": "2",
+        "createDate": "2020/9/8",
+        "status": true
+      },
+      {
+        "id": "3",
+        "title": "TV",
+        "idCompany": "3",
+        "createDate": "2020/9/4",
+        "status": false
+      },
+      {
+        "id": "4",
+        "title": "Ice-cream",
+        "idCompany": "4",
+        "createDate": "2020/9/2",
+        "status": true
+      },
+      {
+        "id": "5",
+        "title": "Oven",
+        "idCompany": "5",
+        "createDate": "2029/9/8",
+        "status": false
+      },
+      {
+        "id": "6",
+        "title": "Radio",
+        "idCompany": "3",
+        "createDate": "2020/9/5",
+        "status": true
+      },
+      {
+        "id": "7",
+        "title": "Mac",
+        "idCompany": "1",
+        "createDate": "2020/9/3",
+        "status": false
+      }
+    ]
+  }

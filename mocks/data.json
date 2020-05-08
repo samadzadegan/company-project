@@ -1,0 +1,177 @@
+{
+  "companies": [
+    {
+      "id": "2",
+      "name": "Dorsa",
+      "telephone": "02188907658",
+      "type": "Edible Products"
+    },
+    {
+      "id": "3",
+      "name": "Sony",
+      "telephone": "02188907658",
+      "type": "Electronics Devices"
+    },
+    {
+      "id": "4",
+      "name": "Mihan",
+      "telephone": "02188907658",
+      "type": "Edible Products"
+    },
+    {
+      "id": "5",
+      "name": "Tefal",
+      "telephone": "02188907658",
+      "type": "Home Appliances"
+    },
+    {
+      "name": "Apple",
+      "telephone": "09198574902",
+      "type": "Electronic Devices",
+      "id": "7"
+    },
+    {
+      "name": "Nahal",
+      "telephone": "02188907658",
+      "type": "Home Appliances",
+      "id": "bcZxzyR"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Iphone",
+      "idCompany": "1",
+      "createDate": "2020/9/8",
+      "status": true
+    },
+    {
+      "id": "2",
+      "title": "Cake",
+      "idCompany": "2",
+      "createDate": "2020/9/8",
+      "status": true
+    },
+    {
+      "id": "3",
+      "title": "TV",
+      "idCompany": "3",
+      "createDate": "2020/9/4",
+      "status": false
+    },
+    {
+      "id": "4",
+      "title": "Ice-cream",
+      "idCompany": "4",
+      "createDate": "2020/9/2",
+      "status": true
+    },
+    {
+      "id": "5",
+      "title": "Oven",
+      "idCompany": "5",
+      "createDate": "2029/9/8",
+      "status": false
+    },
+    {
+      "id": "6",
+      "title": "Radio",
+      "idCompany": "3",
+      "createDate": "2020/9/5",
+      "status": true
+    },
+    {
+      "id": "7",
+      "title": "Mac",
+      "idCompany": "1",
+      "createDate": "2020/9/3",
+      "status": false
+    },
+    {
+      "title": "Chocolate",
+      "createDate": "2020-04-29",
+      "status": true,
+      "idCompany": "2",
+      "id": "5gp_Ii-"
+    },
+    {
+      "title": "Furniture",
+      "createDate": "2020-06-18",
+      "status": true,
+      "idCompany": "bcZxzyR",
+      "id": "z5D0T3u"
+    },
+    {
+      "title": "Rug",
+      "createDate": "2020-05-08",
+      "status": true,
+      "idCompany": "bcZxzyR",
+      "id": "fLMdy-u"
+    },
+    {
+      "title": "Chair",
+      "createDate": "2020-05-22",
+      "status": false,
+      "idCompany": "bcZxzyR",
+      "id": "YKmNRwC"
+    },
+    {
+      "title": "Table",
+      "createDate": "2020-05-05",
+      "status": true,
+      "idCompany": "bcZxzyR",
+      "id": "ze_W4j4"
+    },
+    {
+      "title": "Iphone",
+      "createDate": "2020-03-04",
+      "status": true,
+      "idCompany": "7",
+      "id": "qN6MvT0"
+    },
+    {
+      "title": "Mac",
+      "createDate": "2020-05-07",
+      "status": [
+        true
+      ],
+      "idCompany": "7",
+      "id": "W-_6785"
+    },
+    {
+      "title": "Ipod",
+      "createDate": "2020-05-01",
+      "status": true,
+      "idCompany": "7",
+      "id": "yqsPDH6"
+    },
+    {
+      "title": "Airpod",
+      "createDate": "2020-05-09",
+      "status": false,
+      "idCompany": "7",
+      "id": "MeGtKLH"
+    },
+    {
+      "title": "Apple Watch",
+      "createDate": "2018-05-09",
+      "status": false,
+      "idCompany": "7",
+      "id": "z82zcR3"
+    },
+    {
+      "title": "Water",
+      "createDate": "2020-05-20",
+      "status": true,
+      "idCompany": "6",
+      "id": "cFIUxyf"
+    },
+    {
+      "title": "Coka",
+      "createDate": "2020-05-20",
+      "status": false,
+      "idCompany": "6",
+      "id": "k6Cvc09"
+    }
+  ]
+}

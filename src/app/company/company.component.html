@@ -1,0 +1,65 @@
+<form [formGroup]="companyForm" (ngSubmit)="onSubmit(companyForm.value)" novalidate>
+  <h1>company Form</h1>
+  <fieldset>
+    <label for="name">Name</label>
+    <input type="text" name="name" [formControl]="companyForm.controls['name']" placeholder="Comapny Name">
+    <div *ngIf="submitted && f.name.errors">
+      <div *ngIf="f.name?.errors?.required" style="color: red; margin: 10px 0 0 5px;">Name is required</div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <label for="telephone">Telephone</label>
+    <input type="tel" name="telephone" [formControl]="companyForm.controls['telephone']"
+      placeholder="Comapny Telephone">
+    <div *ngIf="submitted && f.telephone.errors">
+      <div *ngIf="f.telephone?.errors?.pattern" style="color: red; margin: 10px 0 0 5px;">Invalid phone number.</div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <label for="productType">Product Type?</label>
+    <select name="productType" [formControl]="companyForm.controls['type']">
+      <option value="">- - select one - -</option>
+      <ng-container *ngFor="let t of types">
+        <option [value]="t.value">{{ t.label }}</option>
+      </ng-container>
+    </select>
+    <div *ngIf="submitted && f.type.errors">
+      <div *ngIf="f.type?.errors?.required" style="color: red; margin: 10px 0 0 5px;">Product type is required</div>
+    </div>
+  </fieldset>
+
+  <button type="submit">Submit</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Telephone</th>
+      <th>Type</th>
+      <th>Products</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="companyList">
+      <tr *ngFor="let company of companyList; let i = index;">
+        <td data-column="First Name">{{ i + 1 }}</td>
+        <td data-column="Last Name">{{ company.name }}</td>
+        <td data-column="Job Title">{{ company.telephone }}</td>
+        <td data-column="Twitter">{{ company.type }}</td>
+        <td>
+          <a class="btn-gradient cyan small" routerLink="{{'/product/'+company.id}}" routerLinkActive="active">Show
+            Products</a>
+        </td>
+        <td>
+          <a class="btn-gradient red small" (click)="removeCompany(company.id)">Remove
+          </a>
+        </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

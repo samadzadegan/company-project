@@ -1,0 +1,62 @@
+ <form [formGroup]="productForm" (ngSubmit)="onSubmit(productForm.value)" novalidate>
+   <h1>Products Form</h1>
+   <fieldset>
+     <label for="title">Title</label>
+     <input type="text" name="title" [formControl]="productForm.controls['title']" placeholder="Product Title">
+     <div *ngIf="submitted && f.title.errors">
+       <div *ngIf="f.title?.errors?.required" style="color: red; margin: 10px 0 0 5px;">Title is required</div>
+     </div>
+   </fieldset>
+
+   <fieldset>
+     <label for="createDate">Create Date</label>
+     <input type="date" name="createDate" [formControl]="productForm.controls['createDate']" min="2018-01-01"
+       max="2020-12-31">
+   </fieldset>
+
+   <fieldset>
+     <legend>Status</legend>
+     <input type="radio" id="radio1" name="status" [formControl]="productForm.controls['status']" [value]="true">
+     <label for="radio1">Active</label><br>
+     <input type="radio" id="radio2" name="status" [formControl]="productForm.controls['status']" [value]="false">
+     <label for="radio2">Diactive</label><br>
+   </fieldset>
+
+   <button type="submit">Submit</button>
+
+ </form>
+
+ <table>
+   <thead>
+     <tr>
+       <th>ID</th>
+       <th>Title</th>
+       <th>Company Name</th>
+       <th>Create Date</th>
+       <th>Status</th>
+       <th>Actions</th>
+     </tr>
+   </thead>
+   <tbody>
+     <ng-container *ngIf="productList && companyName">
+       <tr *ngFor="let product of productList; let i = index;">
+         <td>{{ i + 1 }}</td>
+         <td>{{ product.title }}</td>
+         <td>{{ companyName }}</td>
+         <td>{{ product.createDate }}</td>
+         <td>
+           <ng-container *ngIf="product.status; else xBlock">
+             Active
+           </ng-container>
+           <ng-template #xBlock>
+             Diactive
+           </ng-template>
+         </td>
+         <td>
+           <a class="btn-gradient red small" (click)="removeProduct(product.id)">Remove
+           </a>
+         </td>
+       </tr>
+     </ng-container>
+   </tbody>
+ </table>
